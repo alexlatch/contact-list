@@ -1,8 +1,8 @@
 import "./App.css";
 import { useState, useEffect } from "react";
 import ContactList from "./components/ContactList";
-import ContactRow from "./components/ContactRow";
-import SelectedContact from "./components/SelectedContact";
+//import ContactRow from "./components/ContactRow";
+//import SelectedContact from "./components/SelectedContact";
 
 export default function App() {
   const [contacts, setContacts] = useState([])
@@ -28,7 +28,18 @@ useEffect(() => {
       <ContactList contacts={contacts} setSelectedContactId={setSelectedContactId}/>
     </div>
     {selectedContactId && (
-      <div className='selected-info'>{featuredContact.name} {featuredContact.email} {featuredContact.phone}</div>
+      <div className='selected-info'>
+        <h2>Contact Details</h2>
+        <ul>
+          <li>Name: {featuredContact.name}</li>
+          <li>Email: {featuredContact.email}</li>
+          <li>Phone: {featuredContact.phone}</li>
+          {/* <li>Address: {featuredContact.address}</li> */}
+          <li>Website: {featuredContact.website}</li>
+          {/* <li>Company: {featuredContact.company}</li> */}
+        </ul>
+        
+      </div>
     )}
  
     </>

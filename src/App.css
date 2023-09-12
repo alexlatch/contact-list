@@ -40,3 +40,20 @@
 .read-the-docs {
   color: #888;
 }
+
+table, th, td {
+  border: 1px solid #888;
+  border-collapse: collapse;
+}
+
+th,td {
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(67, 67, 67);
+}
+
+li  {
+  text-align: left;
+}

@@ -23,19 +23,21 @@ export default function SelectedContact({ selectedContactId }) {
     }
   }, [selectedContactId]);
 
-  if (!contact) {
-    return <div>No contact selected.</div>;
-  }
 
-  return (
-    <div>
-      <h2>Contact Details</h2>
-      <p>Name: {contact.name}</p>
-      <p>Email: {contact.email}</p>
-      <p>Phone: {contact.phone}</p>
-      <p>Address: {contact.address}</p>
-      <p>Website: {contact.website}</p>
-      <p>Company: {contact.company}</p>
-    </div>
-  );
-}
+//this code is a little goofy
+//   if (!contact) {
+//     return <div>No contact selected.</div>;
+//   }
+
+//   return (
+//     <div>
+//       <h2>Contact Details</h2>
+//       <p>Name: {contact.name}</p>
+//       <p>Email: {contact.email}</p>
+//       <p>Phone: {contact.phone}</p>
+//       <p>Address: {contact.address}</p>
+//       <p>Website: {contact.website}</p>
+//       <p>Company: {contact.company}</p>
+//     </div>
+//   );
+ }
